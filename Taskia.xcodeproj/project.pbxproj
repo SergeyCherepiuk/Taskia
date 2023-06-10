@@ -11,6 +11,15 @@
 		AD505D772A34964100375BD2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD505D762A34964100375BD2 /* ContentView.swift */; };
 		AD505D792A34964300375BD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD505D782A34964300375BD2 /* Assets.xcassets */; };
 		AD505D7C2A34964300375BD2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD505D7B2A34964300375BD2 /* Preview Assets.xcassets */; };
+		AD505D842A349B8E00375BD2 /* Taskia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD505D822A349B8E00375BD2 /* Taskia.xcdatamodeld */; };
+		AD505D862A349C8700375BD2 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD505D852A349C8700375BD2 /* DataController.swift */; };
+		AD505D882A349E8900375BD2 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD505D872A349E8900375BD2 /* TaskRow.swift */; };
+		AD505D8A2A349ED000375BD2 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD505D892A349ED000375BD2 /* HexColor.swift */; };
+		AD505D8C2A34A03A00375BD2 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD505D8B2A34A03A00375BD2 /* Checkbox.swift */; };
+		AD505D902A34ADF900375BD2 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD505D8F2A34ADF900375BD2 /* Header.swift */; };
+		AD505D922A34B1F600375BD2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AD505D912A34B1F600375BD2 /* .gitignore */; };
+		AD505D942A34B3BA00375BD2 /* TasksListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD505D932A34B3BA00375BD2 /* TasksListScreen.swift */; };
+		AD505D962A34B4B500375BD2 /* TaskDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD505D952A34B4B500375BD2 /* TaskDetailsScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		AD505D762A34964100375BD2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD505D782A34964300375BD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD505D7B2A34964300375BD2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD505D832A349B8E00375BD2 /* Taskia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Taskia.xcdatamodel; sourceTree = "<group>"; };
+		AD505D852A349C8700375BD2 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		AD505D872A349E8900375BD2 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
+		AD505D892A349ED000375BD2 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
+		AD505D8B2A34A03A00375BD2 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
+		AD505D8F2A34ADF900375BD2 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		AD505D912A34B1F600375BD2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		AD505D932A34B3BA00375BD2 /* TasksListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListScreen.swift; sourceTree = "<group>"; };
+		AD505D952A34B4B500375BD2 /* TaskDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +71,15 @@
 			children = (
 				AD505D742A34964100375BD2 /* TaskiaApp.swift */,
 				AD505D762A34964100375BD2 /* ContentView.swift */,
+				AD505D8F2A34ADF900375BD2 /* Header.swift */,
+				AD505D932A34B3BA00375BD2 /* TasksListScreen.swift */,
+				AD505D952A34B4B500375BD2 /* TaskDetailsScreen.swift */,
+				AD505D912A34B1F600375BD2 /* .gitignore */,
+				AD505D872A349E8900375BD2 /* TaskRow.swift */,
+				AD505D8B2A34A03A00375BD2 /* Checkbox.swift */,
+				AD505D892A349ED000375BD2 /* HexColor.swift */,
+				AD505D852A349C8700375BD2 /* DataController.swift */,
+				AD505D822A349B8E00375BD2 /* Taskia.xcdatamodeld */,
 				AD505D782A34964300375BD2 /* Assets.xcassets */,
 				AD505D7A2A34964300375BD2 /* Preview Content */,
 			);
@@ -126,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD505D7C2A34964300375BD2 /* Preview Assets.xcassets in Resources */,
+				AD505D922A34B1F600375BD2 /* .gitignore in Resources */,
 				AD505D792A34964300375BD2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +165,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD505D902A34ADF900375BD2 /* Header.swift in Sources */,
+				AD505D882A349E8900375BD2 /* TaskRow.swift in Sources */,
+				AD505D8A2A349ED000375BD2 /* HexColor.swift in Sources */,
+				AD505D962A34B4B500375BD2 /* TaskDetailsScreen.swift in Sources */,
+				AD505D942A34B3BA00375BD2 /* TasksListScreen.swift in Sources */,
 				AD505D772A34964100375BD2 /* ContentView.swift in Sources */,
+				AD505D862A349C8700375BD2 /* DataController.swift in Sources */,
+				AD505D8C2A34A03A00375BD2 /* Checkbox.swift in Sources */,
+				AD505D842A349B8E00375BD2 /* Taskia.xcdatamodeld in Sources */,
 				AD505D752A34964100375BD2 /* TaskiaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +373,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AD505D822A349B8E00375BD2 /* Taskia.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AD505D832A349B8E00375BD2 /* Taskia.xcdatamodel */,
+			);
+			currentVersion = AD505D832A349B8E00375BD2 /* Taskia.xcdatamodel */;
+			path = Taskia.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AD505D692A34964100375BD2 /* Project object */;
 }
