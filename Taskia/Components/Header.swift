@@ -31,15 +31,4 @@ struct Header: View {
         .padding(.horizontal, 16)
         .padding(.top, 16)
     }
-    
-//    func addSampleTask() {
-//        let task = Task(context: self.moc)
-//        task.id = UUID()
-//        task.title = "Sample title"
-//        task.toCategory = self.categories[0]
-//        task.note = "Sample note"
-//        task.isDone = false
-//        task.due = Date()
-//        try? moc.save()
-//    }
 }

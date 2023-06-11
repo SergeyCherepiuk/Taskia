@@ -20,6 +20,11 @@
 		AD505D922A34B1F600375BD2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AD505D912A34B1F600375BD2 /* .gitignore */; };
 		AD505D942A34B3BA00375BD2 /* TasksListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD505D932A34B3BA00375BD2 /* TasksListScreen.swift */; };
 		AD505D962A34B4B500375BD2 /* TaskDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD505D952A34B4B500375BD2 /* TaskDetailsScreen.swift */; };
+		ADD9E6332A35C07A0024E2EB /* TasksList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD9E6322A35C07A0024E2EB /* TasksList.swift */; };
+		ADD9E6392A35C6970024E2EB /* CategoriesListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD9E6382A35C6970024E2EB /* CategoriesListScreen.swift */; };
+		ADD9E63B2A35C72F0024E2EB /* CategoriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD9E63A2A35C72F0024E2EB /* CategoriesList.swift */; };
+		ADD9E63D2A35C92E0024E2EB /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD9E63C2A35C92E0024E2EB /* CategoryRow.swift */; };
+		ADD9E63F2A35D8D70024E2EB /* CategoryDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD9E63E2A35D8D70024E2EB /* CategoryDetailsScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,11 @@
 		AD505D912A34B1F600375BD2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		AD505D932A34B3BA00375BD2 /* TasksListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListScreen.swift; sourceTree = "<group>"; };
 		AD505D952A34B4B500375BD2 /* TaskDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsScreen.swift; sourceTree = "<group>"; };
+		ADD9E6322A35C07A0024E2EB /* TasksList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksList.swift; sourceTree = "<group>"; };
+		ADD9E6382A35C6970024E2EB /* CategoriesListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListScreen.swift; sourceTree = "<group>"; };
+		ADD9E63A2A35C72F0024E2EB /* CategoriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesList.swift; sourceTree = "<group>"; };
+		ADD9E63C2A35C92E0024E2EB /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		ADD9E63E2A35D8D70024E2EB /* CategoryDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +60,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD503EFF2A35BF140013F9CB /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				AD505D952A34B4B500375BD2 /* TaskDetailsScreen.swift */,
+				AD505D932A34B3BA00375BD2 /* TasksListScreen.swift */,
+				ADD9E6382A35C6970024E2EB /* CategoriesListScreen.swift */,
+				ADD9E63E2A35D8D70024E2EB /* CategoryDetailsScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		AD505D682A34964100375BD2 = {
 			isa = PBXGroup;
 			children = (
@@ -69,15 +90,12 @@
 		AD505D732A34964100375BD2 /* Taskia */ = {
 			isa = PBXGroup;
 			children = (
+				ADD9E6312A35C0420024E2EB /* Utils */,
+				ADD9E6302A35C02C0024E2EB /* Components */,
+				AD503EFF2A35BF140013F9CB /* Screens */,
 				AD505D742A34964100375BD2 /* TaskiaApp.swift */,
 				AD505D762A34964100375BD2 /* ContentView.swift */,
-				AD505D8F2A34ADF900375BD2 /* Header.swift */,
-				AD505D932A34B3BA00375BD2 /* TasksListScreen.swift */,
-				AD505D952A34B4B500375BD2 /* TaskDetailsScreen.swift */,
 				AD505D912A34B1F600375BD2 /* .gitignore */,
-				AD505D872A349E8900375BD2 /* TaskRow.swift */,
-				AD505D8B2A34A03A00375BD2 /* Checkbox.swift */,
-				AD505D892A349ED000375BD2 /* HexColor.swift */,
 				AD505D852A349C8700375BD2 /* DataController.swift */,
 				AD505D822A349B8E00375BD2 /* Taskia.xcdatamodeld */,
 				AD505D782A34964300375BD2 /* Assets.xcassets */,
@@ -92,6 +110,27 @@
 				AD505D7B2A34964300375BD2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ADD9E6302A35C02C0024E2EB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AD505D8B2A34A03A00375BD2 /* Checkbox.swift */,
+				AD505D872A349E8900375BD2 /* TaskRow.swift */,
+				AD505D8F2A34ADF900375BD2 /* Header.swift */,
+				ADD9E6322A35C07A0024E2EB /* TasksList.swift */,
+				ADD9E63A2A35C72F0024E2EB /* CategoriesList.swift */,
+				ADD9E63C2A35C92E0024E2EB /* CategoryRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		ADD9E6312A35C0420024E2EB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AD505D892A349ED000375BD2 /* HexColor.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,14 +205,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD505D902A34ADF900375BD2 /* Header.swift in Sources */,
+				ADD9E63B2A35C72F0024E2EB /* CategoriesList.swift in Sources */,
 				AD505D882A349E8900375BD2 /* TaskRow.swift in Sources */,
 				AD505D8A2A349ED000375BD2 /* HexColor.swift in Sources */,
+				ADD9E63D2A35C92E0024E2EB /* CategoryRow.swift in Sources */,
+				ADD9E6392A35C6970024E2EB /* CategoriesListScreen.swift in Sources */,
 				AD505D962A34B4B500375BD2 /* TaskDetailsScreen.swift in Sources */,
 				AD505D942A34B3BA00375BD2 /* TasksListScreen.swift in Sources */,
 				AD505D772A34964100375BD2 /* ContentView.swift in Sources */,
 				AD505D862A349C8700375BD2 /* DataController.swift in Sources */,
 				AD505D8C2A34A03A00375BD2 /* Checkbox.swift in Sources */,
 				AD505D842A349B8E00375BD2 /* Taskia.xcdatamodeld in Sources */,
+				ADD9E6332A35C07A0024E2EB /* TasksList.swift in Sources */,
+				ADD9E63F2A35D8D70024E2EB /* CategoryDetailsScreen.swift in Sources */,
 				AD505D752A34964100375BD2 /* TaskiaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

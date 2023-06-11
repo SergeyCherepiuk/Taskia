@@ -9,14 +9,14 @@ import SwiftUI
 import CoreData
 
 struct TaskRow: View {
+    @Environment(\.managedObjectContext) private var moc: NSManagedObjectContext
+    
     @State private var task: Task
-    private let moc: NSManagedObjectContext
     private let gray = Color(hex: 0x888888, alpha: 1.0)
     private let dateFormatter = DateFormatter()
     
-    init(task: Task, moc: NSManagedObjectContext) {
+    init(task: Task) {
         self.task = task
-        self.moc = moc
         self.dateFormatter.dateFormat = "MMM d, h:mm a"
     }
     
