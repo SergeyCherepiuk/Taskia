@@ -67,6 +67,9 @@ struct CategoriesList: View {
                 if object.id == id {
                     self.moc.delete(object)
                 }
+                if self.selectedCategory != nil && self.selectedCategory!.id == id {
+                    self.selectedCategory = nil
+                }
             }
         }
         try? self.moc.save()
