@@ -13,13 +13,22 @@ struct Checkbox: View {
     private let blue = Color(hex: 0x0A84FF, alpha: 1.0)
     
     var body: some View {
-        ZStack {
-            Circle()
-                .foregroundColor(isChecked ? blue : .white)
-                .frame(width: 22, height: 22)
-            Image(systemName: "checkmark")
-                .font(.system(size: 10))
-                .foregroundColor(isChecked ? .white : .black)
+        if isChecked {
+            ZStack {
+                Circle()
+                    .foregroundColor(blue)
+                    .frame(width: 22, height: 22)
+                Image(systemName: "checkmark")
+                    .font(.system(size: 10))
+                    .foregroundColor(.white)
+            }
+        } else {
+            ZStack {
+                Circle()
+                    .strokeBorder(.gray, lineWidth: 1.5)
+                    .foregroundColor(.white)
+                    .frame(width: 22, height: 22)
+            }
         }
     }
 }
