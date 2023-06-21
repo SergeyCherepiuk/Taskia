@@ -14,6 +14,7 @@ struct CategoriesList: View {
     
     @Binding var selectedCategory: Category?
     @State private var isActive = false
+    @State private var isDialogVisible = false
     
     var body: some View {
         List {
@@ -37,7 +38,7 @@ struct CategoriesList: View {
                 .contentShape(Rectangle())
                 .simultaneousGesture(
                     TapGesture(count: 2).onEnded { _ in
-                        removeCategory(id: category.id!)
+                        askToRemoveIfNeeded(id: category.id!)
                     }
                 )
                 .simultaneousGesture(
@@ -51,11 +52,29 @@ struct CategoriesList: View {
                         self.isActive = true
                     }
                 )
+                .confirmationDialog("All task will be deleted!", isPresented: $isDialogVisible) {
+                    Button("Delete anyway", role: .destructive) {
+                        removeCategory(id: category.id!)
+                        isDialogVisible = false
+                    }
+                } message: {
+                    Text("All task will be deleted!")
+                }
             }
         }
         .toolbar {
             NavigationLink(destination: { CategoryDetailsScreen() }) {
                 Text("Add")
+            }
+        }
+    }
+    
+    private func askToRemoveIfNeeded(id: UUID) {
+        for category in categories {
+            if category.id == id && category.toTaskArray.count > 0 {
+                isDialogVisible = true
+            } else if category.id == id {
+                removeCategory(id: id)
             }
         }
     }
